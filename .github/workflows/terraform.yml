@@ -9,10 +9,10 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v1
 
-      - name: Filter to PR Opened
-        uses: actions/bin/filter@v1
-        with:
-          args: "action 'opened|rerequested|synchronize'"
+      # - name: Filter to PR Opened
+      #   uses: actions/bin/filter@v1
+      #   with:
+      #     args: "action 'opened|rerequested|synchronize'"
       - name: Terraform Init
         uses: hashicorp/terraform-github-actions/init@v0.5.3
         env:
