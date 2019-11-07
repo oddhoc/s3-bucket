@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Filter to PR Opened
-        uses: actions/bin/filter@master
+        uses: actions/bin/filter@v1
         with:
           args: "action 'opened|rerequested|synchronize'"
       - name: Terraform Init
